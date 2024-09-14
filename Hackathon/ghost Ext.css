@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Gill+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #2b2b2c;
+    overflow-x: hidden;   
+
+}
+#page1 {
+    height: 200vh;
+    width: 100vw;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("https://i.pinimg.com/236x/7c/72/ef/7c72ef4576673cdb86f67cbfd4f87728.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.Ghost-Ext {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 10px;
+    padding: 20px;
+}
+.Ghost-Ext button {
+    padding: 100px; /* Apply equal padding on all sides */
+    margin: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.LB-one {
+    display: block;
+    width: 400px;  /* Set button width */
+    height: 690px; /* Set button height */
+    border-radius: 20px; /* Rounded corners */
+    margin: 30px; /* Space around the button */
+    background-image: url("yellow1.jpg"); /* Use the image as a background */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the image covers the button without distortion */
+    background-position: center; /* Center the image within the button */
+    border: none;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #fff;
+}
+.LB-two {
+    display: block;
+    width: 700px;  /* Set button width */
+    height: 400px; /* Set button height */
+    border-radius: 20px; /* Rounded corners */
+    margin: 30px; /* Space around the button */
+    background-image: url("yellow2.jpg"); /* Use the image as a background */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the image covers the button without distortion */
+    background-position: center; /* Center the image within the button */
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #fff;
+  
+}
+.LB-three {
+    display: block;
+    width: 600px;  /* Set button width */
+    height: 350px; /* Set button height */
+    border-radius: 20px; /* Rounded corners */
+    margin: 30px; /* Space around the button */
+    background-image: url("yellow3.jpg"); /* Use the image as a background */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the image covers the button without distortion */
+    background-position: center; /* Center the image within the button */
+    border: none;
+   position: absolute;
+    top: 122%;
+    left: 2%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #fff; 
+
+}
+.LB-four {
+    display: block;
+    width: 600px;  /* Set button width */
+    height: 350px; /* Set button height */
+    border-radius: 20px; /* Rounded corners */
+    margin: 30px; /* Space around the button */
+    background-image: url("yellow4.jpg"); /* Use the image as a background */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the image covers the button without distortion */
+    background-position: center; /* Center the image within the button */
+    border: none;
+   position: absolute;
+    top: 122%;
+    left: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #fff;
+   
+}
+.Ghost-Ext h1 {
+    font-size: 110px;
+    color: #fff;
+    z-index: 5;
+    position: absolute;
+    left: 41%;
+    top: 10%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    background-color: transparent; 
+    line-height: 100%;
+    overflow-y: hidden;
+}
+.Ghost-Ext h2 {
+    font-size: 24px;
+    color: #bdbdbd;
+    z-index: 5;
+    position: absolute;
+    left: 41.5%;
+    top: 43%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    background-color: transparent; 
+}
+.Ghost-Ext button:hover {
+    transform: scale(1.05);
+    transition: .3s;
+    flex-grow: inherit;
+}
+.Ghost-Ext h3 {
+    position: absolute;
+    top: 7%;
+    right: 8%;
+    z-index: 1;
+    background-color: rgb(232, 230, 230);
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+}
+.Ghost-Ext h3:hover {
+    box-shadow: 1px 1px 15px #b0b1b1;
+    transition: .5s;
+}
+
+

@@ -1,0 +1,338 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Gill+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color:#fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.tagline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* height: 60vh; /* Adjust the height as needed */
+    background-size: cover;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 6em; /* Adjust font size */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+    top: 35%;
+    font-family: 'Gill Sans', 'Roboto', sans-serif;
+}
+
+.navbar .heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative; /* Make li the reference for absolute positioning */
+    font-size: 18px;
+    transition: .2s;
+    z-index: 1; /* Ensure li has a higher z-index */
+}
+
+.navbar ul li a {
+    position: relative; /* Ensure a tag is the reference for span */
+    display: block; /* Ensure it's a block element for hover effect */
+    z-index: 1; /* Keep the a tag above the span */
+    text-decoration: none; /* Optional to remove underline */
+    color: #040404; /* Text color */
+    margin-left: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.navbar ul li a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 0; /* Span is behind the text */
+    opacity: 0; /* Start with hidden background */
+    transform: scale(0); /* Start with the background shrunk */
+    transition: .5s;
+    color: #876543;
+    background-color: #1c1a1a;
+    box-shadow: 2px 2px 15px #987654;
+}
+
+.navbar ul li a:hover span {
+    transform: scale(1); /* Scale to normal size on hover */
+    opacity: 1; /* Make it visible */
+    z-index: -1; /* Keep it behind the text */
+
+}
+.navbar ul li a:hover {
+    background-color: #2e2b2d;
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 10px;
+    transition: .5s;
+}
+.RR-logo {
+    height: 80%;
+    width: 18%;
+    position: sticky;
+    transform: translateX(-280px);
+
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.Homepage {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.Homepage img {
+    height: 50%;
+    width:1340px;
+}
+
+/* Models Section */
+.models {
+    height: 100%;
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.models h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/*.model-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.model-item {
+    width: 200px;
+    text-align: center;
+    position:relative;
+    overflow: visible;
+}
+
+/*.model-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.model-item {
+    width: 200px;
+    text-align: center;
+    position:relative;
+    overflow: visible;
+} 
+
+.model-item img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 15px #b994e6,
+                -2px -2px 15px #b994e6;
+  box-shadow: inset 2px 2px 15px #b994e6,
+                -2px -2px 15px #b994e6;
+}
+
+
+.model-item img:hover{
+    transform: translateY(-10px);
+    transition: .5s ease-in-out;
+}*/
+.model-gallery {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.model-item {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.model-item img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #b994e6, -2px -2px 15px #b994e6;
+    transition: transform .5s ease-in-out; /* Smooth hover effect */
+}
+
+.model-item img:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .model-item {
+        flex: 1 1 calc(50% - 40px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .model-item {
+        flex: 1 1 calc(100% - 40px); /* 1 item per row */
+    }
+}
+
+
+.model-item img:hover {
+    transform: translateY(-10px);
+}
+
+
+.model-item p {
+    position: absolute;
+    top: 101%;
+    z-index: 1;
+}
+
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.service-box h3 {
+    font-size: 24px;
+}
+
+.service-box button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
